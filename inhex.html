@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>顺风车 · 途径版</title>
+    <style>
+        * { box-sizing: border-box; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
+        body { background: #f3f6f9; margin: 0; padding: 20px; }
+        .app-container { max-width: 1200px; margin: 0 auto; background: white; border-radius: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); padding: 24px; }
+        .navbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 12px; border-bottom: 2px solid #e2e8f0; padding-bottom: 16px; }
+        .role-tag { background: #dbeafe; color: #1e40af; border-radius: 40px; padding: 2px 12px; font-size: 13px; font-weight: 600; }
+        .card { background: #f8fafc; border-radius: 20px; padding: 16px; margin-bottom: 16px; border: 1px solid #e2e8f0; }
+        .flex { display: flex; gap: 16px; flex-wrap: wrap; }
+        button { background: #3b82f6; color: white; border: none; padding: 8px 16px; border-radius: 40px; font-weight: 500; cursor: pointer; border: 1px solid #2563eb; transition: 0.2s; }
+        button.secondary { background: white; color: #1e293b; border: 1px solid #cbd5e1; }
+        button.danger { background: #ef4444; border-color: #dc2626; }
+        input, select, textarea { padding: 8px 12px; border: 1px solid #cbd5e1; border-radius: 20px; width: 100%; margin-bottom: 12px; font-size: 14px; }
+        .waypoint-item { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; }
+        .remove-waypoint { background: #ef4444; color: white; border: none; border-radius: 20px; padding: 4px 12px; cursor: pointer; }
+        .qrcode-preview { max-width: 150px; max-height: 150px; border: 1px dashed #94a3b8; border-radius: 12px; padding: 8px; margin-top: 8px; }
+        .order-item { border-left: 4px solid #3b82f6; }
+        .text-sm { font-size: 14px; color: #475569; }
+    </style>
+</head>
+<body>
+<div class="app-container" id="app"></div>
+<script src="app.js"></script>
+</body>
+</html>
